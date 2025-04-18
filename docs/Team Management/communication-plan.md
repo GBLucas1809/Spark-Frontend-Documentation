@@ -3,67 +3,66 @@ title: Communication Plan
 authors: {}
 ---
 
-# 🗂️ Comunication Plan – Projeto [Nome do Projeto]
+# 🗂️ Comunication Plan – SPARK (Frontend)
 
-## 1. Objetivo do Plano
+## 1. Main Goal
 
-Assegurar uma comunicação clara, eficiente e contínua entre os membros da equipe e os stakeholders, promovendo alinhamento, acompanhamento de progresso e identificação de impedimentos.
-
----
-
-## 2. Stakeholders e Participantes
-
-| Nome             | Papel na equipe             | Necessidade de informação                     | Nível de envolvimento |
-|------------------|-----------------------------|------------------------------------------------|------------------------|
-| Larissa Rangel       | Líder        | Tarefas técnicas, definições de API            | Muito Alto                   |
-| Gabriel Barbosa    | Estrategista               | Roadmap, progresso, entrega de funcionalidades | Muito alto             |
-| Lorhan de Souza   |                | Status diário, impedimentos                    | Médio                   |
-| Thiago Carvalho    | Cliente/Stakeholder externo | Marcos de entrega, status geral                | Médio                  |
-| Rodolfo    |         | Versões entregues, bugs                        | Baixo                  |
+Ensure clear, efficient, and continuous communication among the members of the Software Project Management, Systems Project teams, and stakeholders, promoting alignment, progress tracking, and identification of obstacles.
 
 ---
 
-## 3. Canais de Comunicação
+## 2. Participants
 
-| Tipo de Comunicação    | Canal                      | Objetivo                                      | Participantes        | Frequência       |
+| Name             | Role               | Level of Engagement |
+|------------------|-----------------------------|------------------------|
+| Larissa Rangel       | GPS Team Leader     | Muito Alto                   |
+| Gabriel Barbosa    | Project Planner and Facilitator  | Muito alto             |
+| Lorhan de Souza   | Support Team Member        | Médio                   |
+| Thiago Carvalho    |  Support Team Member      | Médio                  |
+| Rodolfo    |  Support Team Member         | Baixo                  |
+| Bruno da Fonseca Chevitarese      | PS Team Leader    | Muito Alto             |
+| Henrique de Souza Lima   | Support Team Member         | Médio                  |
+| Guilherme Borges Cabral   | Support Team Member        | Muito Alto             |
+| Nicolas Duarte Botelho   |  Support Team Member        | Muito Alto             |
+| Lucas Bruno Alves    |  Support Team Member            | Baixo                  |
+
+---
+
+## 3. Comunication Channels
+
+| Type of Comunication    | Channel                      | Goal                                      | Participants        | Frequency       |
 |------------------------|----------------------------|-----------------------------------------------|----------------------|------------------|
-| Comunicação rápida     | Slack / Discord            | Resolução de dúvidas, alertas rápidos         | Toda a equipe        | Contínua         |
-| Planejamento de Sprint | Google Meet + Jira         | Planejamento de tarefas                       | Devs, PO, SM         | Quinzenal        |
-| Reunião diária (Daily) | Google Meet / Slack Huddle | Compartilhar status e bloqueios               | Devs, SM             | Diária (15min)   |
-| Apresentação (Review)  | Google Meet / Slides       | Mostrar entregas da sprint                    | Devs, PO, Cliente    | Quinzenal        |
-| Documentação técnica   | Confluence / Notion        | Registrar decisões, APIs, arquitetura         | Devs, Tech Lead      | Contínua         |
-| Reporte executivo      | Email                      | Atualizações de alto nível                    | PO, Stakeholders     | Mensal           |
+| Fast Comunication     | Discord            | Issue resolution and quick notifications        | GPS and PS Teams       | Every day         |
+| Sprint Planning | Google Meet + Github Projects + PMC         | Tasks Planning                      | GPS Team         |  Weekly       |
+| Weekly | Google Meet | Share status and obstacles               | GPS and PS Teams             | Weekly |
 
 ---
 
-## 4. Rotina de Comunicação
+## 4. Comunication Routine
 
-| Evento             | Formato        | Duração | Frequência | Facilitador     | Observações                        |
+| Event             | Format       | Duration | Frequency | Facilitator     | Notes                        |
 |--------------------|----------------|---------|------------|------------------|------------------------------------|
-| Daily              | Reunião Online | 15 min  | Diária     | Scrum Master     | Cada membro responde 3 perguntas   |
-| Planning           | Reunião Online | 1h      | Quinzenal  | Scrum Master     | Usa backlog do Jira                |
-| Review             | Reunião Online | 1h      | Quinzenal  | PO               | Devs mostram o que foi entregue   |
-| Retrospective      | Reunião Online | 1h      | Quinzenal  | Scrum Master     | Avaliação da sprint                |
-| Checkpoint Cliente | Email ou Call  | 30 min  | Mensal     | PO               | Status geral e próximos passos     |
+| Review and Planning | Online Meeting | 30 min  | Weekly     | Leader GPS Team  | Uses PMC and Github Projects to review the previous steps and plan the next ones  |
+| Weekly           | Online Meeting | 45 min      | Weekly  | Leaders GPS and PS Team     | One of the members of the Systems Project Team answer the questions about the Ongoing Project |
 
 ---
 
-## 5. Responsáveis pela Comunicação
+## 5. Responsables for Comunication
 
-| Tipo de Conteúdo             | Responsável Principal     |
+| Content Type             | Lead Responsable     |
 |------------------------------|----------------------------|
-| Status técnico               | Desenvolvedores            |
-| Planejamento e backlog       | Product Owner              |
-| Facilitação de reuniões      | Scrum Master               |
-| Comunicação com stakeholders | PO / Gerente de Projeto    |
-| Documentação técnica         | Devs / Tech Lead           |
+| Technical Status             | PS Team                    |
+| Planning and Backlog         | GPS Team                   |
+| Meeting Facilitator          | Facilitator                |
+| Comunication with stakeholders | GPS and PS Team Leaders  |
+| Technical Documentation      | Support Team Members       |
 
 ---
 
-## 6. Boas Práticas
+## 6. Good Practices
 
-- Usar comunicação assíncrona sempre que possível.
-- Evitar reuniões longas ou fora de foco.
-- Manter todos os documentos atualizados e acessíveis.
-- Ter um canal único por tema no Slack (ex: `#bugs`, `#frontend`, `#infra`).
-- Incentivar feedbacks frequentes (ex: via retrospectiva ou reuniões 1:1).
+- Use asynchronous communication whenever possible.
+- Avoid long or unfocused meetings.  
+- Keep all documents updated and accessible.  
+- Maintain ongoing comunication through Discord channels for each Team.  
+- Encourage frequent feedback.  
