@@ -13,7 +13,7 @@ Understand the pesonality of each member related to SPARK - Frontend Project and
 
 | Name             | Dominance | Influence | Steadliness | Conscientiouness |
 |------------------|-----------|-----------|-------------|------------------|
-| Larissa Rangel   |-----------|-----------|-------------|------------------|
+| Larissa Rangel   |12,50%|45,00%|35%|7,50%|
 | Gabriel Barbosa  | 7.32% | 19.51% | 58.78% | 24.39% |
 | Lorhan de Souza  | 0% | 12.50% | 57.50% | 30% |
 | Thiago Carvalho  | 20% | 52% | 15% | 12% |
