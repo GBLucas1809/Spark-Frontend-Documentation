@@ -2,33 +2,36 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
-  title: 'SPARK - FRONTEND',
-  tagline: 'Página de Gerenciamento das equipes envolvidas na melhoria do Frontend do SPARK',
-  favicon: 'img/spark.ico',
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  title: 'LEDS DevTools',
+  favicon: 'img/favicon.ico',
+  url: `https://leds-org.github.io`,
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'larissabrangel', // Usually your GitHub org/user name.
-  projectName: 'Spark-Frontend-Documentation', // Usually your repo name.
+  organizationName: 'leds-org', // Usually your GitHub org/user name.
+  projectName: 'leds-tools', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'br',
-    locales: ['br'],
+    defaultLocale: 'en',
+    locales: ['en', 'fr'], // Example locales
+  },
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    require.resolve('docusaurus-lunr-search'),    
+  ],
+
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -37,10 +40,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          breadcrumbs: true,          
+          showLastUpdateTime: true, 
+          includeCurrentVersion:true,   
+          docsRootComponent: '@theme/DocsRoot',
+          docVersionRootComponent: '@theme/DocVersionRoot',
+          docRootComponent: '@theme/DocRoot',
+          docItemComponent: '@theme/DocItem',  
+          routeBasePath: '/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -50,33 +57,75 @@ const config: Config = {
   ],
 
   themeConfig: {
+
+    footer: {
+
+      style: 'light',      
+    copyright: `
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <img src="/img/leds.png" alt="Powered by LEDS" style="height: 24px; margin-right: 8px;" />
+      <span>Copyright © ${new Date().getFullYear()}. Powered by <a href="https://www.instagram.com/ledsifes/">LEDS</a>, created with Docusaurus.</span>
+    </div>
+  `,
+
+    },
+    
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      }
+    },
+    image: 'img/leds-social-card.jpg',
     navbar: {
-      title: 'SPARK',
+      title: 'TOOLS ',
       logo: {
-        alt: 'Spark Logo',
-        src: 'img/spark.png',
+        alt: 'LEDS Logo',
+        src: 'img/logo.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'andes',
           position: 'left',
-          label: 'Spark - Frontend',
+          label: 'Andes',
         },
         {
-          href: 'https://github.com/larissabrangel/Spark-Frontend-Documentation',
+          type: 'docSidebar',
+          sidebarId: 'code_wise',
+          position: 'left',
+          label: 'Code Wise',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'made',
+          position: 'left',
+          label: 'Made',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'spark',
+          position: 'left',
+          label: 'Spark',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'test_ai',
+          position: 'left',
+          label: 'Test.AI',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'oraculo',
+          position: 'left',
+          label: 'Oraculo',
+        },
+        {
+          href: 'https://github.com/leds-org',
           label: 'GitHub',
           position: 'right',
         },
       ],
-    },
-    footer: {
-      style: 'light',
-      logo: {
-        src: '/img/spark.png',
-        alt: 'Logo do Spark no rodapé',
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Powered by LEDS, created with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

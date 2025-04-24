@@ -1,5 +1,5 @@
 {
-  "name": "documentacao-spark",
+  "name": "documentacao-leds-tools",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,23 +11,29 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
+    "build:gitlab": "docusaurus build --out-dir public",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
+    "bpmn-js": "^17.9.1",
+    "@docusaurus/core": "^3.5.2",
+    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/theme-mermaid": "^3.5.2",
+    "@fontsource/inter": "^5.0.18",
+    "@fontsource/poppins": "^5.0.14",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "docusaurus-lunr-search": "^3.4.0",
     "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
-    "typescript": "~5.6.2"
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
+    "typescript": "~5.2.2"
   },
   "browserslist": {
     "production": [
